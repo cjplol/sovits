@@ -25,5 +25,5 @@ if __name__=="__main__":
         with open('./raw/audio.mp3', 'wb') as f:
             f.write(result)
 
-    #5 将百度音频转换为静芬语音
+    #5 将百度音频转换为静芬语音 1
     os.system('python inference_main.py -m "logs/44k/G_24000.pth" -c "configs/config.json" -n "audio.mp3" -t 2 -s "jingfen"')
